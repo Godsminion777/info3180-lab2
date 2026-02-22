@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="{{ url_for('static', filename='download.jpg') }}" alt="Profile Picture" class="profile-pic">
+        
+        <h2>Hector Riettie</h2> 
+        <p class="username">@UwiWebDevIIBoss</p>
+        <p class="location">Kingston, Jamaica</p>
+        
+        <p class="date-joined">Joined {{ date_joined }}</p>
+    </div>
+    
+    <div class="profile-body">
+        <p>I am a passionate university student exploring the worlds of full-stack web development, machine learning, and quantum computing. Always looking for the next challenging project to build and deploy!</p>
+        
+        <div class="profile-stats">
+            <div class="stat"><strong>42</strong><br>Posts</div>
+            <div class="stat"><strong>317</strong><br>Following</div>
+            <div class="stat"><strong>1,024</strong><br>Followers</div>
+        </div>
+        
+        <button class="btn btn-success follow-btn">Follow</button>
+    </div>
+</div>
+{% endblock %}
